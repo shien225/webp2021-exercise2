@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+    background-color:lightgoldenrodyellow ;
+}
+
+h1 {
+    text-align: center;
+    padding: 5px;
+    background-color: cyan;
+    border: 5px solid darkcyan;
+    color: royalblue;
+}
+
+.task {
+    font-size: calc(90%);
+}
+
+p {
+    font-size: calc(120%);
+}
+
+h3 {
+    text-align: center;
+    padding: 5px;
+    background-color: gold;
+    margin: 0 auto;
+    width: calc(60%);
+    border: 5px solid sienna;
+    color: black;
+}
+
+.standing {
+    text-align: center;
+    font-size: calc(150%);
+    padding: 5px;
+    margin: 0 auto;
+    width: calc(50%);
+    background-color: #eee;
+}
+
+h4 {
+    margin: 15px auto;
+    width: calc(90%);
+    border: 5px solid tomato;
+}
+
+div {
+    padding: 5px;
+    margin: 20px auto;
+    width: calc(90%);
+    background-color: white;
+}
+
+.rank {
+    margin: 0px;
+    font-size: 80%;
+}
+
+blockquote {
+    padding: 5px;
+    margin: 20px auto;
+    width:calc(60%);
+    background-color: #eee;
+    color: #333;
+}
+
+.quote {
+    text-align: right;
+    font-style: italic;
+    margin: 4px;
+    font-size: calc(80%);
+}
+
+h5 {
+    font-size: calc(120%);
+    width: calc(25%);
+    margin: 0px auto;
+    background-color: aqua;
+}
+
+dl {
+    width: calc(35%);
+    margin: 20px auto;
+    background-color: #eee;
+}
+
+.matome {
+    padding: 5px;
+    margin: 20px auto;
+    width: calc(25%);
+    background-color: cornflowerblue;
+}
+
+footer {
+    padding: 5px;
+    background-color: white;
+}

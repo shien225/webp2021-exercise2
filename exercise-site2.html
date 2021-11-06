@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>演習2:HTMLの要素</title>
+  </head>
+
+  <link href="styles/style.css" rel="stylesheet">
+
+  <body>
+      <h1>HTMLの要素</h1>
+      <p class="task">日本大学文理学部情報科学科 Webプログラミングの演習課題</p>
+      <p>指定のページから気になったHTML要素を挙げる。</p>
+      <p>実際に使ってみて他の要素・属性も使う必要があったため、用途に分けて記述する</p>
+
+      <h2>1.article要素</h2>
+
+      <p>article要素は、独立した1つのコンテンツをマークアップする要素である。</p>
+      <p>あるサイトの記事や投稿されたコメントなど、既に完成されたものを同じように表現する際に用いると適切であるということが分かった。</p>
+      <p>下記がarticle要素を活用した例である。</p>
+
+      <article class="standing">
+        <h3>個人的"神ゲー"ランキングBEST3</h3>
+        <article>
+          <div>
+            <h4>第1位 ゼルダの伝説 BREATH OF THE WILD</h4>
+            <p class="rank">ゼルダの伝説シリーズでは異例のオープンワールド</p>
+            <p class="rank">主要キャラとの深い絆・関係性にあなたも感動する…</p>
+            <p class="rank">厄災との歴戦から100年後が舞台となる壮大な世界感がたまらない!!</p>
+            <p class="rank">2022年に続編発売が決定!期待が高まる!!</p>
+          </div>
+
+          <div>
+            <h4>第2位 MONSTER HUNTER RISE</h4>
+            <p class="rank">大人気モンハンの最新作!!</p>
+            <p class="rank">和風な里を代表するハンターとなってモンスターを狩りまくれ!!</p>
+            <p class="rank">懐かしのモンスターから新登場した強力なモンスターが出現!!</p>
+            <p class="rank">解き放て、狩猟魂</p>
+          </div>
+
+          <div>
+            <h4>第3位 INSIDE</h4>
+            <p class="rank">1人の少年の大冒険!!</p>
+            <p class="rank">ストーリーそのものが謎!?様々な考察が出来るダークファンタジー</p>
+            <p class="rank">度重なる衝撃展開に驚きを隠せない!!</p>
+          </div>
+
+        </article>
+      </article>
+
+      <p>今回作成した内容は私の自作であるが、本来は決まった度合い・データ・文章などを扱う場合には</p>
+      <p>上のようにarticle要素にまとめて表現するという方法を学んだ。</p>
+
+      <h2>2.blockquote要素・cite属性</h2>
+
+      <p>blockquote要素は記述される文章が、外部からの引用・転載されたものである場合によく用いられる。</p>
+      <p>また合わせてcite属性を付与することで引用元のURLを添えることが出来る。</p>
+
+      <blockquote
+      cite="https://developer.mozilla.org/ja/docs/Web/HTML/Element/blockquote">
+      HTML の &lt;blockquote&gt; 要素 (HTML ブロック引用要素) は、内包する要素の文字列が引用文であることを示します。<br>
+      通常、字下げを伴ってレンダリングされます (整形方法については注意の項を参照してください)。 <br>
+      cite属性により引用元の文書の URL を、 &lt;cite&gt; 要素により引用元の文書のタイトルなどを明示可能です。<br>
+      <p class = "quote">
+        MDN Web Docs  &lt;blockquote&gt;:ブロック引用要素
+      </p>
+      </blockquote>
+
+      <p>上記の様に引用文であるということがわかりやすいようにする必要がある。</p>
+      <p>cite属性を付与していない場合、「無断転載」とみなされる恐れがあるため引用元にアドレスを書くことはほぼ必須であるということを理解した。</p>
+
+      <h2>3.dl,dt,dd要素</h2>
+
+      <p>dl要素は説明リスト、dtはリスト内に存在する用語、ddはその用語の説明を示す。</p>
+      <p>ul,ol要素を用いたリストの違いは、リストに説明が必要であるかそうでないかにある。用語の説明をしたい時にはdl要素を用いる。</p>
+
+      <h5>じゃんけん</h5>
+      <dl>
+        <dt><strong>グー</strong></dt>
+        <dd>・チョキに勝ちパーに負ける</dd>
+        <dt><strong>チョキ</strong></dt>
+        <dd>・パーに勝ちグーに負ける</dd>
+        <dt><strong>パー</strong></dt>
+        <dd>・グーに勝ちチョキに負ける</dd>
+      </dl>
+
+      <p>dt要素内（グー、チョキ、パー）はstrong要素を用いて太字で描画している。</p>
+
+      <h2>4.figure,figcaption要素</h2>
+
+      <p>figure要素は写真、図表、コードなどを扱うことができ表示させることが出来る。</p>
+      <p>figcaption要素はfigure要素で用いているコンテンツを説明するために使う。</p>
+
+      <figure>
+        <img src = "images/cardgame_deck_hiku.png"
+        alt = デッキからカードを引く人のイラスト
+        width="30%" height="30%">
+        <figcaption>デッキからカードを引く人のイラスト<br>
+          <cite>https://www.irasutoya.com/2017/07/blog-post_204.html</cite>
+        </figcaption>
+      </figure>
+
+      <p>figcaption内でもcite属性を付与することで引用元のURLを添えることが出来る。</p>
+      <p>この場合figcaption要素は記述した内容が表示されるため引用URLも表示される。</p>
+
+      <h2 class="matome">まとめ</h2>
+      <P>今回の課題でいくつかの要素について調べ学ぶことが出来た。</P>
+      <p>資料からHTMLだけでもかなり多くの要素があることに驚いたが、そのうち少しだけでも理解することが出来た。</p>
+      <p>このように実際に使ってみて学んでいく学習スタイルが自分にとても合っている気がしたため、積み重ねをとても大事にしていきたいと思った。</p>
+
+      <footer>
+        日本大学文理学部情報科学科 Webプログラミングの演習課題　/　5420043 勝又聖
+      </footer>
+  </body>
+
+</html>
